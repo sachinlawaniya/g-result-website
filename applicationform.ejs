@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-info">
+    <div>
+        <%- include('header') -%>
+    </div>
+    <div class="applicationform text-center mt-5 mx-5 text-uppercase bg-light" style="margin-left:10px; border: 2px red solid;">
+
+        <form class="row g-3 px-4" action="formsubmit" method="post">
+            <fieldset>
+                <legend>applicationform</legend>
+            </fieldset>
+
+            <div class="row g-3">
+                <div class="col">
+                    <label class="form-label ">first name</label>
+
+                    <input type="text" class="form-control" aria-label="First name" name="firstname" required>
+                </div>
+                <div class="col">
+                    <label class="form-label">last name</label>
+
+                    <input type="text" class="form-control" aria-label="Last name" name="lastname" required>
+                </div>
+                <div class=" col ">
+                    <label class="form-label ">father name</label>
+
+                    <input type="text " class="form-control " aria-label="father name " name="fathername" required>
+                </div>
+                <div class=" col ">
+                    <label class="form-label ">mother name</label>
+
+                    <input type="text " class="form-control " aria-label="mother name " name="mothername" required>
+                </div>
+            </div>
+            <div class=" row g-3 ">
+                <div class="col ">
+                    <label class="form-label ">date of birth</label>
+
+                    <input type="date " class="form-control " aria-label="dob" name="dob">
+                </div>
+                <div class="col pt-5 ">
+                    <label class="form-label "> <strong>gender : </strong> &nbsp &nbsp;</label>
+
+                    <input type="radio" class=" " aria-label=" " value="male " name="gender" checked> male
+                    <input type="radio" class=" " aria-label=" " value="female " name="gender"> female
+                    <input type="radio" class=" " aria-label=" " value="other " name="gender"> other
+                </div>
+                <div class="col ">
+                    <label class="form-label ">contact no.</label>
+
+                    <input type="number " class="form-control " aria-label="contact no - : " name="contactno">
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <label for="inputEmail4 " class="form-label ">Email</label>
+                <input type="email " class="form-control " id="inputEmail4 " name="email">
+            </div>
+            <div class="col-md-6 ">
+                <label for="inputPassword4 " class="form-label ">Password</label>
+                <input type="password " class="form-control " id="inputPassword4 " name="password">
+            </div>
+            <div class="col-6 ">
+                <label for="inputAddress " class="form-label ">Address</label>
+                <input type="text " class="form-control " id="inputAddress " placeholder="1234 Main St ">
+            </div>
+            <div class="col-6 ">
+                <label for="inputAddress2 " class="form-label ">Address 2</label>
+                <input type="text " class="form-control " id="inputAddress2 " placeholder="Apartment, studio, or floor ">
+            </div>
+            <div class="col-md-6 ">
+                <label for="inputCity " class="form-label ">City / village</label>
+                <input type="text " class="form-control " id="inputCity ">
+            </div>
+            <div class="col-md-4 ">
+                <label for="inputState " class="form-label ">State</label>
+                <select id="inputState " class="form-select text-capitalize ">
+                <option value=" ">
+                    rajasthan
+                </option> <option value=" ">
+                    himanchal
+                </option> <option value=" ">
+                    uttar pradesh
+                </option> <option value=" ">
+                    hariyana
+                </option> <option value=" ">
+                    uttrakhand
+                </option>
+               
+                
+              </select>
+            </div>
+            <div class="col-md-2 ">
+                <label for="inputdist " class="form-label ">district</label>
+                <select class="form-select text-capitalize " id="inputdist ">
+                    </select>
+            </div>
+            <div class="col-12 ">
+                <div class="form-check ">
+                    <input class="form-check-input " type="checkbox " id="gridCheck ">
+                    <label class="form-check-label " for="gridCheck ">
+                  Check me out
+                </label>
+                </div>
+            </div>
+            <div class="col-12 ">
+                <button type="submit " class="btn btn-primary ">Sign in</button>
+            </div>
+
+        </form>
+        <!-- <form action=" " style="width: 700px; height: 600px; background-color: red; padding: 10px; ">
+            <legend class="text-center ">applicationform</legend>
+
+            <table border="6 " class="mx-3 ">
+                <tr>
+                    <td>first name :-</td>
+                    <td><input type="text "></td>
+                    <td style="margin-left: 10px; ">last name :-</td>
+                    <td><input type="text "></td>
+                </tr>
+                <tr>
+                    <td>father name :-</td>
+                    <td><input type="text "></td>
+                    <td style="margin-left: 10px; ">mother name :-</td>
+                    <td><input type="text "></td>
+                </tr>
+                <tr>
+                    <td>date of birth:-</td>
+                    <td><input type="text "></td>
+                    <td style="margin-left: 10px; " name="gender ">gender :-</td>
+                    <td><input type="radio ">male
+                        <input type="radio ">female
+                        <input type="radio ">other</td>
+                </tr>
+                <tr>
+                    <td>first name :-</td>
+                    <td><input type="text "></td>
+                    <td style="margin-left: 10px; ">last name :-</td>
+                    <td><input type="text "></td>
+                </tr>
+                <tr>
+                    <td>first name :-</td>
+                    <td><input type="text "></td>
+                    <td style="margin-left: 10px; ">last name :-</td>
+                    <td><input type="text "></td>
+                </tr>
+
+            </table>
+
+        </form> -->
+    </div>
+
+</body>
+
+</html>
